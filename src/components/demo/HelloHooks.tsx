@@ -51,7 +51,7 @@ type Test = {
     age?: number;
 }
 
-type TestReadOnly = Readonly<Test>
+// type TestReadOnly = Readonly<Test>
 
 type MyReadOnly<T> = {
     readonly [P in keyof T] : P
