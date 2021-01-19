@@ -43,7 +43,7 @@ function strEnum<T extends string>(o: Array<T>): { [K in T]: K } {
   let sample: Direction;
   
   sample = Direction.North; // Okay
-//   sample = 'North'; // Okay
+  sample = 'North'; // Okay
 //   sample = 'AnythingElse'; // ERROR!
 
 type Test = {
