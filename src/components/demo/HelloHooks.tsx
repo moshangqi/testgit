@@ -166,7 +166,7 @@ interface Point2D {
   
   iTakePoint2D(point2D); // ok, 完全匹配
   iTakePoint2D(point3D); // 额外的信息，没关系
-//   iTakePoint2D({ x: 0, y: 12, z: 13 }); // Error: 没有 'y'
+  iTakePoint2D({ x: 0, y: 12}); 
 
 
 // let err: never = (() => {
